@@ -10,14 +10,14 @@ function App() {
   
 
   return (
-    <div className="flex p-8">
+    <div className=" mobile-responsive flex lg:p-8 md:m-5 xl:p-8 sm:flex-col md:flex-col lg:flex-row xl:flex-row">
 
       <BrowserRouter>
       <Aside />
         <Routes>
-          <Route path="/"/>
+          
 
-            <Route path="categories/All" element={<All />}/>
+            <Route path="/" element={<All />}/>
             <Route path="categories/Movie" element={<Movie />}/>
             <Route path="categories/Serie" element={<Serie />}/>
             <Route path="categories/Favoris" element={<Favoris />}/>
