@@ -91,7 +91,7 @@ export default function All() {
         {filteredAllCategory.map((datas) => (
           <div
             key={datas.id}
-            className=" mobile-responsive flex-shrink-0 lg:w-[23rem]  xl:w-[22rem] sm:w-[47%] md:w-[20rem] ml-2 mr-2 transition-transform transform hover:scale-105"
+            className=" mobile-responsive flex-shrink-0 lg:w-[23rem] xl:w-[22rem] 2xl:w-[25rem] sm:w-[47%] md:w-[20rem] ml-2 mr-2 transition-transform transform hover:scale-105"
           >
             <div className="text-slate-50 relative flex justify-end p-2 top-14 mr-1">
               <div className="w-[30px] h-[30px] rounded-[50%] text-center flex items-center justify-center bg-black opacity-60">
