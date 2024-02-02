@@ -16,28 +16,28 @@ const location = useLocation()
     <div>
       <p className="flex text-[#fc4544] justify-center text-[30px] h-1/3"><MdMovie /></p>
     </div>
-    <div className="flex lg:flex-col sm:flex-row sm:gap-5 lg:gap-5 xl:gap-5">
+    <div className="flex lg:flex-col gap-mobile sm:flex-row sm:gap-5 lg:gap-5 xl:gap-5">
     <Link
         to="/"
-        className={`mx-2 text-[25px] text-white ${location.pathname === '/' && ' text-[#d1c9c9]'}`}
+        className={`mx-2 font-size-mobile lg:text-[25px] sm:text-[25px] text-white ${location.pathname === '/' && ' text-[#b64f4f]'}`}
       >
         <HiMiniSquares2X2 />
       </Link>
       <Link
         to="/categories/Movie"
-        className={`mx-2 text-[25px] text-white ${location.pathname === '/categories/Movie' && 'font-semibold text-[#d1c9c9]'}`}
+        className={`mx-2 font-size-mobile lg:text-[25px] sm:text-[25px] text-white ${location.pathname === '/categories/Movie' && 'font-semibold text-[#b64f4f]'}`}
       >
         <TbMovie />
       </Link>
       <Link
         to="/categories/Serie"
-        className={`mx-2 text-[25px] text-white ${location.pathname === '/categories/Serie' && 'font-semibold text-[#d1c9c9]'}`}
+        className={`mx-2 font-size-mobile lg:text-[25px] sm:text-[25px] text-white ${location.pathname === '/categories/Serie' && 'font-semibold text-[#b64f4f]'}`}
       >
         <PiTelevision />
       </Link>
       <Link
         to="/categories/Favoris"
-        className={`mx-2 text-[25px] text-white ${location.pathname === '/categories/Favoris' && 'font-semibold text-[#d1c9c9]'}`}
+        className={`mx-2 font-size-mobile lg:text-[25px] sm:text-[25px] text-white ${location.pathname === '/categories/Favoris' && 'font-semibold text-[#b64f4f]'}`}
       >
         <FaBookmark />
       </Link>
