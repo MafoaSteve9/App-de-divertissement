@@ -1,28 +1,37 @@
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800;900&display=swap');
-
-* {
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-  
-}
-body {
-  background-color: #10141f;
-}
-.texte-green {
-  color: green;
-}
+  * {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+  :root {
+    --width100: 100%
+  }
+  body {
+    background-color: #10141f;
+  }
 
 @media screen and (min-width: 375px) and (max-width: 639px) {
   .mobile-responsive {
     flex-direction: column;
-    width: 100%;  
+    width:var(--width100) 
   }
   .mobile-responsive input{
-    width: 100%;
+   width:var(--width100)
+  }
+  .font-size-mobile {
+    font-size: 22px;
+  }
+  .gap-mobile {
+    gap: 8px;
+  }
+
+  input::placeholder {
+   font-size: 16px;
   }
  
   .flex-col-nav {
     flex-direction: row;
-    width: 100%;
+    width:var(--width100)
   }
 }
